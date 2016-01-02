@@ -1,0 +1,137 @@
+    @charset "UTF-8";
+
+/*
+-----------------------------------------
+Template: Influit Bio
+Version: 0.1.5
+Author: Joaquín Figueroa M., Influit. (influit.co)
+
+-----------------------------------------
+*/
+
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+
+/* -------------------- Layout -------------------- */
+
+.dummy {
+    padding-top: 100%;
+    /* forces 1:1 aspect ratio */
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* Align center inline elements */
+    font: 0/0 a;
+}
+
+.img-container:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.img-container img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bio {
+    max-width: 650px;
+}
+
+
+/* -------------------- Fonts -------------------- */
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #566076;
+    font-weight: normal;
+    font-size: 1.025em;
+    line-height: 2em;
+    margin: 20px 0;
+}
+
+h1 {
+    font-weight: 600;
+    color: #232830;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    letter-spacing: -0.03em;
+    margin: 20px 0;
+}
+
+a {
+    color: #5A90FE;
+    padding: 2px 0;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.1);
+    -webkit-transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #3F71E3;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.3);
+    -webkit-transition: all 0.2s ease;
+    strong {
+        color: #222222;
+    }
+    /* media queries */
+    @media screen and (max-width: 41.125em) {
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+    @media screen and (max-width: 73.5em) {}
+    /* -------------------- Clearfix -------------------- */
+    .clearfix {
+        overflow: hidden;
+    }
+    * html .clearfix {
+        height: 1%;
+    }
